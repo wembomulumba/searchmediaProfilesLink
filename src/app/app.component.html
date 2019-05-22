@@ -5,15 +5,13 @@
 <app-menu></app-menu>
 <div class="main">
   <!-- Search Function -->
-  <div class="input-group">
-    
-    <input  type="text" class="form-control" placeholder="Start Searching Social Media Profiles">
-    <div class="input-group-append">
-      <button class="btn btn-danger" type="button" (click)="searchProfiles()">
-       Search
-      </button>
-    </div>
-    
+  <div class="input-group">  
+        <input  type="text" id="keyword" [formControl]="keyword"  placeholder="Start Searching Social Media Profiles">
+        <div class="input-group-append">
+          <button class="btn btn-danger" type="button" (click)="searchAllProfiles(keyword.value)">
+           Search
+          </button>
+        </div>     
   </div>
   <span>Result Loading Here....</span>
  <div *ngFor="let item of data"   >
