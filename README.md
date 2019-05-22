@@ -1,4 +1,4 @@
-# SearchProfiles
+# SearchProfiles : Seach Social Media Profiles or Accounts
 
 Live demo here : https://wembomulumba.me/site/search-profiles/
 
