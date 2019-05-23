@@ -15,13 +15,11 @@
   </div>
   <span>Result Loading Here....</span>
  <div *ngFor="let item of data"   >
-    <div  style="margin-top:50px" >
+    <div  style="margin-top:55px" >
       <div >
-        <h5>{{  item.url }}</h5>   
-        <p>{{  item.postid}} </p>
-
-        <p>{{  item.user.url}}</p>
-        <p>{{  item.user.name}}</p>
+        <h5><a btn-twitter href="{{    item.url      }}">{{  item.url}}</a>   </h5>   
+        <p>   <a href="{{  item.postid }}" >{{  item.postid}}</a> </p>
+        <p><a href="{{     item.user.name }}">{{  item.user.name}}</a> </p>
         
       </div>
     </div>
