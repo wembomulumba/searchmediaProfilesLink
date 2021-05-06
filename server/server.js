@@ -17,7 +17,7 @@ MongoClient.connect('mongodb://localhost:27017/animals', function(err, db) {
 
   db.collection('mammals').find().toArray(function (err, result) {
     if (err) throw err;
-
+    else
     console.log(result);
   });
 });
